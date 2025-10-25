@@ -1,67 +1,72 @@
 # =======================================
-# 🧠 Python / Environment
+# 🧠 PYTHON & ENVIRONMENTS
 # =======================================
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*.so
 *.pyd
-*.pkl
+*.pyo
 *.log
-*.tmp
 
 # Virtual environments
-.venv/
-.venv310/
-env/
-venv/
-ENV/
-*.env
+.venv*/
+env*/
+venv*/
+ENV*/
 *.venv
+*.env
 
-# Jupyter / Colab notebooks
-.ipynb_checkpoints/
-*.ipynb_save
-*.ipynb_checkpoint
-
-# =======================================
-# 🧠 Machine Learning / Models
-# =======================================
-models/
-checkpoints/
-*.h5
-*.tflite
-*.task
-*.pb
-*.ckpt
-*.onnx
-*.weights
-
-# TensorFlow / Keras artifacts
-events.out.tfevents.*
+# Byte-compiled / cache / package info
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+.cache/
+pytest_cache/
 
 # =======================================
-# 📦 Data / Datasets
+# ⚙️ BUILD / DIST
 # =======================================
-data/
+build/
+dist/
+*.whl
+
+# =======================================
+# 🧩 DATA, MODELS, & OUTPUTS
+# (keep light CSVs/configs, ignore large artifacts)
+# =======================================
+# Ignore heavy or generated data
+data/raw/
+data/relabeled/
+data/splits/
+data/tmp/
 datasets/
 captures/
-*.csv
-*.npy
-*.npz
+checkpoints/
+outputs/
+logs/
+tmp/
 *.zip
 *.tar
 *.tar.gz
-*.mp4
-*.mov
-*.avi
-*.jpg
-*.jpeg
-*.png
-*.bmp
-*.gif
+*.npz
+*.npy
+
+# Model weights & exports
+models/
+*.tflite
+*.h5
+*.task
+*.pb
+*.onnx
+*.ckpt
+*.weights
+
+# TensorFlow events
+events.out.tfevents.*
 
 # =======================================
-# 💻 IDE / Editor Config
+# 💻 EDITOR / IDE
 # =======================================
 .vscode/
 .idea/
@@ -71,43 +76,19 @@ captures/
 *.orig
 
 # =======================================
-# ⚙️ Build / Cache
-# =======================================
-build/
-dist/
-*.egg-info/
-*.egg
-*.manifest
-*.spec
-*.so
-.cache/
-__pycache__/
-pytest_cache/
-*.pytest_cache/
-
-# =======================================
-# 🍎 macOS System Files
+# 🍎 MACOS SYSTEM FILES
 # =======================================
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# Icon must end with two \r
 Icon
-
-# Thumbnails
 ._*
-
-# Files that might appear in the root of volumes
-.DocumentRevisions-V100
-.fseventsd
+.Trashes
 .Spotlight-V100
 .TemporaryItems
-.Trashes
+.fseventsd
+.DocumentRevisions-V100
 .VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
 Network Trash Folder
@@ -115,13 +96,23 @@ Temporary Items
 .apdisk
 
 # =======================================
-# 🧰 Miscellaneous
+# 🧰 MISC / TEMPORARY
 # =======================================
 *.out
-*.log
-*.json
-*.yaml~
-*.bak
+*.tmp
 *.old
-tmp/
-test_output/
+*.bak
+*.json~
+*.yaml~
+*.txt~
+*.csv~
+*.tmp
+*.backup
+
+# =======================================
+# 🧪 OPTIONAL IGNORE EXCEPTIONS
+# (keep folder structure tracked but ignore its contents)
+# =======================================
+!data/.gitkeep
+!models/.gitkeep
+!notebooks/.gitkeep
