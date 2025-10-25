@@ -35,15 +35,15 @@ It’s designed for **real-time media control**, **ASL integration**, and **cust
 ```bash
 Gesture_Project/
 ├── config/
-│   └── .......          # Map HaGRID → custom labels
+│   └── .......                 # Map HaGRID → custom labels
 ├── set_data/
 │   ├── .../                    # Raw dataset or captured images
-│   ├── .../              # After label remap
-│   └── .../                 # train/val/test
-├── models/
+│   ├── .../                    # After label remap
+│   └── .../                    # train/val/test
+├── models/                     
 │   └── ...
 ├── scripts/
-│   ├── ....py
+│   ├── ....py                  # trainers
 │   ├── ....py
 │   ├── ....py
 │   ├── ....py     
