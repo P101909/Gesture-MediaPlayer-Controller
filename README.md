@@ -36,7 +36,7 @@ It’s designed for **real-time media control**, **ASL integration**, and **cust
 Gesture_Project/
 ├── config/
 │   └── .......          # Map HaGRID → custom labels
-├── data/
+├── set_data/
 │   ├── .../                    # Raw dataset or captured images
 │   ├── .../              # After label remap
 │   └── .../                 # train/val/test
