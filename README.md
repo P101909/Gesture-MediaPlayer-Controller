@@ -1,7 +1,7 @@
 <!-- Header Banner -->
-<p align="center">
-  <img src="https://github.com/your-username/your-repo/assets/banner_gesture_ai.png" width="80%">
-</p>
+<h1 align="center">🤖 Gesture Recognition & Control</h1>
+<p align="center">CMPT 310 · Fall 2025 · MediaPipe + TensorFlow Hybrid System</p>
+
 
 <h1 align="center">🎯 Gesture Recognition & Control</h1>
 <p align="center">
