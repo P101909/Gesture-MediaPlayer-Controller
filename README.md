@@ -9,7 +9,7 @@
 ---
 
 ##  Overview
-
+### Demo Video Link: https://drive.google.com/file/d/1pD-rEtYHZJViCPVyhJh_qDc6BmKe7lJT/view?usp=sharing
 This project is a **hybrid hand gesture recognition system** that merges:
 - 🤚 **Static gestures** (Play, Pause, Stop) recognized via **MediaPipe Model Maker**, and  
 - 👋 **Dynamic gestures** (Wave Left/Right, Double Swipe) detected using **motion tracking** of hand landmarks.  
